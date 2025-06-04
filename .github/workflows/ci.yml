@@ -1,6 +1,5 @@
-name: Run Vitest Tests
+name: Run Lint and Vitest Tests
 
-# Trigger workflow on push to main and on pull requests targeting main
 on:
   push:
     branches: [main]
@@ -8,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,6 +21,9 @@ jobs:
 
       - name: 📦 Install dependencies
         run: npm install
+
+      - name: 🔍 Run ESLint (lint check)
+        run: npm run lint
 
       - name: 🧪 Run Vitest tests
         run: npm run test:run
