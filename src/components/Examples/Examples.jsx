@@ -14,10 +14,10 @@ const Examples = () => {
   /*                       useEffect with no dependencies                       */
   /* -------------------------------------------------------------------------- */
 
-  /*   useEffect(() => {
+  useEffect(() => {
     //console.log("useEffect runs on every re-render");
     console.log("here are the instructions to fetch data from somewhere");
-  }); */
+  });
 
   /* -------------------------------------------------------------------------- */
   /*                      useEffect with Empty Dependencies                     */
@@ -85,6 +85,7 @@ const Examples = () => {
           <button onClick={() => setFruit("Apple")}>Apple</button>
           <button onClick={() => setFruit("Banana")}>Banana</button>
           <button onClick={() => setFruit("Orange")}>Orange</button>
+          <p>{fruit}</p>
 
           <div>
             <pre>{`useEffect(() => {
