@@ -1,6 +1,6 @@
 import "./Examples.scss";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 //test
 
