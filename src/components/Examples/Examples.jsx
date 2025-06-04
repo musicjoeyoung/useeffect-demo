@@ -2,6 +2,7 @@ import "./Examples.scss";
 
 import { useState } from "react";
 
+//test again
 const Examples = () => {
   const [count, setCount] = useState(0);
   const [fruit, setFruit] = useState("banana");
